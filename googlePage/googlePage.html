@@ -5,10 +5,116 @@
 
     <style type="text/css">
 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
         body{
             background-color: #fff;
             font-family: Tahoma;
+            height: 100%;
             
+        }
+
+        .btn{
+            background-color: #f4f4f4;
+            color: #000;
+            padding: 5px 15px;
+            cursor: pointer;
+            border: 1px solid #dbdbdb;
+            border-radius: 2px;
+            font-weight: bold;
+            font-size: 8pt;
+        }
+
+        .btn:hover{
+            background-color: #f5f5f5;
+            color: #222222;
+            border: 1px solid #c6c6c6c6;
+            box-shadow:0px 0.5px 1px #888;
+        }
+        
+        .link-gray1{
+           color: #c6c6c6c6;
+           cursor: pointer;
+        }
+        .link-gray1:hover{
+            text-decoration: underline;
+        }
+
+        .link-gray2{
+           color: #404040;
+           cursor: pointer;
+           margin: 0px 10px;
+        }
+        .link-gray2:hover{
+            text-decoration: underline;
+        }
+
+        
+        #search{
+            text-align: center;
+        }
+
+        input{
+            border: 1px solid #ddd;
+            font-size: 12pt;
+            padding: 2px 5px;
+            width: 500px;
+        }
+        
+        input:hover{
+            border: 1px solid #ccc;
+        }
+        input:focus{
+            border: 1px solid #004;
+        }
+
+        .float-right{
+            float: right;
+            clear: both;
+        }
+
+        #top-right-menu{
+            margin: 10px;
+            
+        }
+
+        #bottom-left-menu{
+          position: absolute;
+          bottom: 10 ;
+          left: 10px;
+        }
+
+        #bottom-right-menu{
+            position:absolute;
+            bottom: 10;
+            right: 10px;
+        }
+
+        #bottom-wrapper {
+            background-color: #f2f2f2;
+            position: fixed;
+            bottom: 0px;
+            height: 50px;
+            width: 100%;
+        }
+
+        #search{
+            margin-top: 200px;
+        }
+
+        #signin-btn{
+            background-color: #4485f6;
+            color: white;
+            padding: 10px;
+            margin: 10px 10px 0px 0px;
+        }
+
+        #signin-btn:hover{
+            background-color: red;
+            cursor: pointer;
         }
         
     </style>
@@ -16,7 +122,38 @@
 
 <body>
 
+    <div id="top-right-menu" class="float-right"  >
+        <span class="link-gray2">+You </span>
+        <span class="link-gray2">Gmail </span>
+        <span class="link-gray2">Images </span>
+        <span id="signin-btn">Sign in</span>
+    </div>
 
+        <br>
+
+        <div id="search">
+
+        <img src="Google_2015_logo.svg.png" style="width: 269px; height: 95px;">
+        <br><br>
+        <input type="text"><br><br>
+
+        <span class="btn">Google Search </span>
+
+        <span class="btn" style="margin-left: 20px;">I'm Feeling Lucky</span>
+    </div>
+<div id="bottom-wrapper">
+    <div id="bottom-left-menu">
+    <span class="link-gray1">Advertising </span>
+    <span class="link-gray1">Business </span>
+    <span class="link-gray1">About </span>
+    </div>
+</div>
+    
+    <div id="bottom-right-menu">
+    <span class="link-gray1">Privacy</span>
+    <span class="link-gray1">Terms</span>
+    <span class="link-gray1">Setting</span>
+    </div>
 
 </body>
 
