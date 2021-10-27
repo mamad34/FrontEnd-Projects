@@ -1,0 +1,53 @@
+body {
+}
+.box {
+  margin: 100px, 0px, 100px, 100px;
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  transition-duration: 2s;
+  transition-property: background, transform;
+  transition-timing-function: ease-in;
+}
+.box:hover {
+  background-color: chocolate;
+  transform: rotate(45deg);
+}
+
+.parent {
+  margin-top: 50px;
+  width: 600px;
+  height: 600px;
+  background-color: red;
+}
+.child {
+  width: 50%;
+  height: 50%;
+  background-color: blue;
+
+  /* transition: transform 1s ease-in-out; */
+}
+.parent:hover .child {
+  /* transform: translateX(100%); */
+  background-color: green;
+  animation: left-to-right 1s ease-in forwards 3 alternate;
+}
+
+@keyframes left-to-right {
+  0% {
+    background-color: red;
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateY(100%);
+  }
+
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  100% {
+    background-color: yellow;
+    transform: translateX(100%);
+  }
+}
